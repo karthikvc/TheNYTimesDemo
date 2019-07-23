@@ -43,7 +43,7 @@ class TheNYTimesDemoTests: XCTestCase {
     func testFetchData()  {
         
         let expectation = self.expectation(description:  "JSON Response Received")
-        Networking().performFetch(with: APIService.getSectionWith(topic: .ALL_Section, period: 1), completion: {(Result) in
+        Networking().performFetch(with: APIService.getSectionWith(topic: .ALL_Section, period: .OneDay), completion: {(Result) in
             
             XCTAssertEqual(Result.status, "OK", "Data Fetch Successefully")
             //XCTAssertEqual(Result.status, "Not OK", "Data Fetch Failed")
