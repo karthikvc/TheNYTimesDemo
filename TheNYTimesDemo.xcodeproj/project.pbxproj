@@ -161,7 +161,7 @@
 				18F3503522E7C2C900E5BBB7 /* Networking+extension.swift */,
 			);
 			name = Service;
-			path = ../../Documents/Working/TheNYTimesDemo/TheNYTimesDemo/Service;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		185887AD22E71991003DC5CD /* View */ = {
@@ -173,7 +173,7 @@
 				18F3503E22E7C46000E5BBB7 /* SectionViewController.swift */,
 			);
 			name = View;
-			path = ../../Documents/Working/TheNYTimesDemo/TheNYTimesDemo/View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		185887AF22E71991003DC5CD /* Model */ = {
@@ -185,7 +185,7 @@
 				18F3502E22E7C1FE00E5BBB7 /* Sections.swift */,
 			);
 			name = Model;
-			path = ../../Documents/Working/TheNYTimesDemo/TheNYTimesDemo/Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		185887B422E71992003DC5CD /* ViewModel */ = {
@@ -194,7 +194,7 @@
 				18F3503922E7C3CF00E5BBB7 /* SectionViewModel.swift */,
 			);
 			name = ViewModel;
-			path = ../../Documents/Working/TheNYTimesDemo/TheNYTimesDemo/ViewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
