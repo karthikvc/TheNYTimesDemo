@@ -47,7 +47,7 @@ class TheNYTimesDemoUITests: XCTestCase {
         
         // Get an array of cells
         if cells.count > 0 {
-            //snapshot("after load")
+            
             let count: Int = (cells.count - 1)
             
             let promise = expectation(description: "Wait for table cells")
@@ -62,7 +62,7 @@ class TheNYTimesDemoUITests: XCTestCase {
                 tableCell.tap()
                 
                 if i == (count - 1) {
-                    //snapshot("detail View")
+                    
                     promise.fulfill()
                 }
                 
