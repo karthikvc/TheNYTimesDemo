@@ -23,6 +23,9 @@
 		18F3503022E7C1FE00E5BBB7 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3502C22E7C1FE00E5BBB7 /* Media.swift */; };
 		18F3503122E7C1FE00E5BBB7 /* Media_metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3502D22E7C1FE00E5BBB7 /* Media_metadata.swift */; };
 		18F3503222E7C1FE00E5BBB7 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3502E22E7C1FE00E5BBB7 /* Sections.swift */; };
+		18F3503622E7C2C900E5BBB7 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3503322E7C2C900E5BBB7 /* config.swift */; };
+		18F3503722E7C2C900E5BBB7 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3503422E7C2C900E5BBB7 /* Networking.swift */; };
+		18F3503822E7C2C900E5BBB7 /* Networking+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3503522E7C2C900E5BBB7 /* Networking+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +68,9 @@
 		18F3502C22E7C1FE00E5BBB7 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		18F3502D22E7C1FE00E5BBB7 /* Media_metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media_metadata.swift; sourceTree = "<group>"; };
 		18F3502E22E7C1FE00E5BBB7 /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
-		18F3503322E7C2C900E5BBB7 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
-		18F3503422E7C2C900E5BBB7 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		18F3503522E7C2C900E5BBB7 /* Networking+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Networking+extension.swift"; sourceTree = "<group>"; };
+		18F3503322E7C2C900E5BBB7 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		18F3503422E7C2C900E5BBB7 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		18F3503522E7C2C900E5BBB7 /* Networking+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Networking+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,12 +331,15 @@
 				185887B922E71992003DC5CD /* SectionViewController.swift in Sources */,
 				18F3503222E7C1FE00E5BBB7 /* Sections.swift in Sources */,
 				185887C022E71A6A003DC5CD /* MenuView.swift in Sources */,
+				18F3503722E7C2C900E5BBB7 /* Networking.swift in Sources */,
 				18F3503022E7C1FE00E5BBB7 /* Media.swift in Sources */,
 				185887BE22E71992003DC5CD /* SectionViewModel.swift in Sources */,
 				185887C222E71B24003DC5CD /* SectionViewCell.swift in Sources */,
 				18F3503122E7C1FE00E5BBB7 /* Media_metadata.swift in Sources */,
 				1858876822E6F672003DC5CD /* ViewController.swift in Sources */,
+				18F3503822E7C2C900E5BBB7 /* Networking+extension.swift in Sources */,
 				18F3502F22E7C1FE00E5BBB7 /* Results.swift in Sources */,
+				18F3503622E7C2C900E5BBB7 /* config.swift in Sources */,
 				1858876622E6F672003DC5CD /* AppDelegate.swift in Sources */,
 				185887C422E72DED003DC5CD /* DetailViewController.swift in Sources */,
 			);
