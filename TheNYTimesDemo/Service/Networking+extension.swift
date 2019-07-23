@@ -12,7 +12,7 @@ enum APIService {
     
     case getSection(topic:Section)
     
-    case getSectionWith(topic:Section, period:Int)
+    case getSectionWith(topic:Section, period:Period)
     
 }
 
@@ -25,7 +25,7 @@ extension APIService {
             return "\(BASE_URL)\(type.Topic)/1.json?\(API_KEY_PARAMS)\(API_KEY)"
             
         case .getSectionWith(let type, let Peroid):
-            return "\(BASE_URL)\(type.Topic)/\(Peroid).json?\(API_KEY_PARAMS)\(API_KEY)"
+            return "\(BASE_URL)\(type.Topic)/\(Peroid.rawValue).json?\(API_KEY_PARAMS)\(API_KEY)"
         }
         
     }
