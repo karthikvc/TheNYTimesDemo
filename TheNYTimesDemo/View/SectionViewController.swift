@@ -19,10 +19,12 @@ class SectionsViewController: UIViewController {
     let sectionTopic = Section.allCases
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.menuView.delegate = self
+        
         leftContraings.constant = 0
         mainMenuActive = true
         sectionViewModel.vmDelegate = self

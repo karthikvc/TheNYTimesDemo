@@ -23,7 +23,9 @@ class MenuView: UIView {
     
     override func awakeFromNib() {
         
+        self.tableview.accessibilityIdentifier = "menuView"
         self.tableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
     }
 
 }

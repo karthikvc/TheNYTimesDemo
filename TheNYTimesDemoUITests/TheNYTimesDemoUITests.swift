@@ -30,10 +30,84 @@ class TheNYTimesDemoUITests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testswipe()  {
+    
+        sleep(3)
+        app.swipeUp()
+        sleep(4)
+        app.swipeUp()
+        sleep(3)
+        app.swipeDown()
+        sleep(2)
+        app.swipeDown()
+    }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCellHight() {
+        
+        app.launch()
+        
+        sleep(5)
+        let cells = app.tables.cells
+        
+        let tableCell = cells.element(boundBy: 0)
+        
+        let cellframe = tableCell.frame
+        
+        XCTAssertEqual(cellframe.height, 271, "cell hight is not equal" )
+        
+        
+        
+    }
+    
+    func testNavigatiobartitle()  {
+        app.launch()
+        
+        XCTAssert(app.navigationBars["The New york Times"].exists)
+    }
+    
+    
+    func testMenu() {
+        
+        app.launch()
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        
+        sleep(1)
+        //app.navigationBars.buttons.element(boundBy: 0).tap()
+        //sleep(10)
+        let myTable = app.tables.matching(identifier: "menuView")
+        
+        let cells = myTable.cells
+        
+        //let tableCell = cells.element(boundBy: 2)
+        
+        if cells.count > 0 {
+            //app.navigationBars.buttons.element(boundBy: 0).tap()
+            let count: Int = (cells.count - 1)
+        
+            let promise = expectation(description: "Wait for table cells")
+            
+            for i in stride(from: 0, to: count , by: 1) {
+                // Grab the first cell and verify that it exists and tap it
+                let tableCell = cells.element(boundBy: i)
+                
+                XCTAssertTrue(tableCell.exists, "The \(i) cell is in place on the table")
+                
+                // Does this actually take us to the next screen
+                tableCell.tap()
+                sleep(5)
+                if i == (count - 1) {
+                    
+                    promise.fulfill()
+                }
+                app.navigationBars.buttons.element(boundBy: 0).tap()
+            }
+        }
+         waitForExpectations(timeout: 30, handler: nil)
+        //tableCell.tap()
+        
+        
+        
     }
     
     

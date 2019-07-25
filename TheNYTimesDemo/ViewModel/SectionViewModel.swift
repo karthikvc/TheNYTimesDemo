@@ -92,7 +92,6 @@ class SectionViewModel {
             let media =  item.media
             let assetid = item.asset_id
             //load from cache
-            cell.sectionimage.image = UIImage()
             if let img = imgCache.object(forKey: assetid as AnyObject) as? UIImage {
                 DispatchQueue.main.async {
                     
@@ -127,6 +126,20 @@ class SectionViewModel {
                                             self.imgCache.setObject(tCell.sectionimage.image!, forKey: assetid as AnyObject )
                                             
                                            }
-                                        }}}}}}}}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
              }
+    
+    
+    deinit {
+        
+        
+        
+    }
 }

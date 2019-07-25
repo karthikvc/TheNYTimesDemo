@@ -11,13 +11,13 @@ import Foundation
 
 enum Section: CaseIterable {
     case ALL_Section
-    case Sports
-    case Movies
-    //case Education
     case Books
     case Foods
     case Health
     case Magazine
+    case Movies
+    case Sports
+    //case Education
     case Science
     case Travel
     
